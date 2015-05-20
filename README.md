@@ -8,7 +8,7 @@ Scripts for OAI-PMH (http://www.openarchives.org/)
 
 ## Usage: 
 
-harvest.pl [options]
+     harvest.pl [options]
 
 ## Options:
      -baseurl=[URL] 	BaseURL of the OAI-PMH Data Provider
