@@ -1,16 +1,14 @@
 # OAI-PMH
 Scripts for OAI-PMH (http://www.openarchives.org/)
 
-## Requirements:
-
+## Requirements
 - Perl 5.x
 - Net::OAI::Harvester (http://search.cpan.org/perldoc?Net::OAI::Harvester)
 
-## Usage: 
+## Usage
+     ./harvest.pl [options]
 
-     harvest.pl [options]
-
-## Options:
+## Options
      -baseurl=[URL] 	BaseURL of the OAI-PMH Data Provider
      -dir=[PATH]	Output directory (must exist) (default: CWD)
      -schema=[schema]	Metadata schema (default 'oai_dc')
@@ -19,4 +17,7 @@ Scripts for OAI-PMH (http://www.openarchives.org/)
      -until=[Date]	Date-based selective harvesting (YYYY-MM-DD)
      -noauto		Disable automatic flow control (resubmission of ResumptionTokens)
      -h			Print this help
+
+## Example
+     ./harvest.pl -baseurl=http://export.arxiv.org/oai2 -dir=oaidump/physics -set=physics
      
